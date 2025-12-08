@@ -10,9 +10,9 @@ public class CM2Magang11 {
         do {
             System.out.println("\n=== Sistem Pendaftaran Magang Mahasiswa ===");
             System.out.println("1. Tambah Data Magang Mahasiswa");
-            System.out.println("2. Tampilkan Seluruh Data Pendaftar Magang");
-            System.out.println("3. Cari Data Pendaftar Magang Berdasarkan Program Studi");
-            System.out.println("4. Hitung dan Tampilkan Jumlah Pendaftar untuk Setiap Status Magang");
+            System.out.println("2. Tampilkan Semua Pendaftar Magang");
+            System.out.println("3. Cari Pendaftar Berdasarkan Program Studi");
+            System.out.println("4. Hitung Jumlah Pendaftar untuk Setiap Status");
             System.out.println("5. Keluar");
             System.out.print("Pilih menu (1-5): ");
             pilihan = input.nextInt();
@@ -81,7 +81,7 @@ public class CM2Magang11 {
         dataMagang[jumlahData][5] = status;
         jumlahData++;
 
-        System.out.println("Data pendaftar magang berhasil ditambahkan. Total pendaftar: " + jumlahData);
+        System.out.println("Data pendaftaran magang berhasil ditambahkan. Total pendaftar: " + jumlahData);
     }
 
     //menampilkan semua data
