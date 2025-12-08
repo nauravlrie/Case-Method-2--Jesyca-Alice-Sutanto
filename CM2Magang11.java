@@ -81,7 +81,7 @@ public class CM2Magang11 {
         dataMagang[jumlahData][5] = status;
         jumlahData++;
 
-        System.out.println("Data berhasil ditambahkan. Total pendaftar: " + jumlahData);
+        System.out.println("Data pendaftar magang berhasil ditambahkan. Total pendaftar: " + jumlahData);
     }
 
     //menampilkan semua data
