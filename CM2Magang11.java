@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //JESYCA ALICE SUTANTO
 
 public class CM2Magang11 {
     static String [][] dataMagang = new String [100][6];
