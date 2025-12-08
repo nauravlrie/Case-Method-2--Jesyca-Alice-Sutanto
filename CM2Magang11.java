@@ -111,7 +111,7 @@ public class CM2Magang11 {
         System.out.print("Masukkan Program Studi: ");
         String cari = input.nextLine().toLowerCase();
 
-        System.out.println("Team Teaching Dasar Pemrograman 2025 Politeknik Negeri Malang"); // Tambah header mirip modul
+        System.out.println("Team Teaching Dasar Pemrograman 2025 Politeknik Negeri Malang"); 
         System.out.printf("%-3s %-15s %-10s %-20s %-15s %-8s %-10s\n",
                 "No", "Nama", "NIM", "Prodi", "Perusahaan", "Semester", "Status");
         System.out.println("--------------------------------------------------------------------------------");
