@@ -1,4 +1,4 @@
-import java.util.Scanner; //JESYCA ALICE SUTANTO
+import java.util.Scanner; //JESYCA ALICE SUTANTO SIB 1A NO 11
 
 public class CM2Magang11 {
     static String [][] dataMagang = new String [100][6];
