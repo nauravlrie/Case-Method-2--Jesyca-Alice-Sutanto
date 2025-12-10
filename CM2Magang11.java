@@ -15,18 +15,19 @@ public class CM2Magang11 {
             System.out.println("4. Hitung Jumlah Pendaftar untuk Setiap Status");
             System.out.println("5. Keluar");
             System.out.print("Pilih menu (1-5): ");
+            
             pilihan = input.nextInt();
             input.nextLine();                     
 
-            if (pilihan == 1)      tambahData(input);
+            if (pilihan == 1) tambahData(input);
             else if (pilihan == 2) tampilkanData();
             else if (pilihan == 3) cariData(input);
             else if (pilihan == 4) hitungStatus();
             else if (pilihan == 5) System.out.println("Program selesai.");
-            else                   System.out.println("Pilihan tidak valid!");
+            else System.out.println("Pilihan tidak valid!");
 
-        } while (pilihan != 5);
-
+        } while (pilihan != 5); //kondisi untuk terus mengulang jika pilihan diluar 5, karena kalau 5 sudah berhenti dan tidak akan mengulangi pertanyaan lgi
+            //kalau enter 5 maka keluar loop
         input.close();
     }
 
@@ -53,8 +54,8 @@ public class CM2Magang11 {
             System.out.print("Semester pengambilan magang (6 atau 7): ");
             semester = input.nextLine();
             if (!semester.equals("6") && !semester.equals("7"))
-                System.out.println("Hanya boleh 6 atau 7!");
-        } while (!semester.equals("6") && !semester.equals("7"));
+                System.out.println("Hanya boleh 6 atau 7!"); //mengecek !semester equals, jika semester equals true makan ! semester equalsnya false,
+        } while (!semester.equals("6") && !semester.equals("7")); //kedua-duanya, untu mengecek jika bukan 6 atau 7 maka akan terus mengulangi
 
         //memvalidasi status
         String status;
@@ -70,7 +71,8 @@ public class CM2Magang11 {
                  !status.equalsIgnoreCase("Ditolak"));
 
         status = status.substring(0, 1).toUpperCase() + status.substring(1).toLowerCase();
-        perusahaan = perusahaan.substring(0, 1).toUpperCase() + perusahaan.substring(1).toLowerCase();
+        perusahaan = perusahaan.substring(0, 1).toUpperCase() + perusahaan.substring(1).toLowerCase(); //untuk merapikan ketikan user yang kadang huruf besar atau kecilnya acak"an
+                                // agar huruf besarnya ada di awal saja.
 
         //menyimpan ke array 2D
         dataMagang[jumlahData][0] = nama;
