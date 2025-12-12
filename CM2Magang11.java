@@ -117,7 +117,7 @@ public class CM2Magang11 {
         boolean ketemu = false; //deklarasi 
         //loop untuk setiap data
         for (int i = 0; i < jumlahData; i++) {
-            if (dataMagang[i][2].contains(cari)) { //indeks 2/ kolom ketiga,berarti mencari dalam prodi
+            if (dataMagang[i][2].equals(cari)) { //indeks 2/ kolom ketiga,berarti mencari dalam prodi
 
                 System.out.printf("%-3d %-15s %-10s %-20s %-15s %-8s %-10s\n",
                         (i+1), dataMagang[i][0], dataMagang[i][1], dataMagang[i][2],
