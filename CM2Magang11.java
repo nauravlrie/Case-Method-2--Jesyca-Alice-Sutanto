@@ -138,10 +138,10 @@ public class CM2Magang11 {
         int diterima = 0, menunggu = 0, ditolak = 0;
 
         for (int i = 0; i < jumlahData; i++) {
-            String s = dataMagang[i][5]; //mengambil status
-            if (s.equalsIgnoreCase("diterima")) diterima++;
-            else if (s.equalsIgnoreCase("menunggu")) menunggu++;
-            else if (s.equalsIgnoreCase("ditolak")) ditolak++;
+            String status = dataMagang[i][5]; //mengambil status
+            if (status.equalsIgnoreCase("diterima")) diterima++;
+            else if (status.equalsIgnoreCase("menunggu")) menunggu++;
+            else if (status.equalsIgnoreCase("ditolak")) ditolak++;
         }
         System.out.println("\n--- Jumlah Pendaftar per Status ---");
         System.out.println("Diterima : " + diterima);
